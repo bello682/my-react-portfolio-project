@@ -29,12 +29,10 @@ export default function AboutMe() {
 								have experience in Website developement and responsiveness of
 								the website,also i'm learning my backend skills.
 							</p>
-							{/* onClick={HandleClick} */}
 							<Link
 								className="Link"
-								to="/CongratulationPage"
+								to="/projectPage"
 								target="_blank"
-								// style={{ textDecoration: "none", color: "white" }}
 							>
 								<button className="CV_download">Download Cv/Project</button>
 							</Link>

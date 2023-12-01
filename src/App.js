@@ -9,15 +9,16 @@ import TestimonialPage from "./Testimonials/testimonial";
 import WorkPage from "./workProject/work";
 import ContactPage from "./Contacts/contacts";
 import ErrorPage from "./errorHandlepage/ErrorPage";
-import CongratulationPage from "./Contacts/congratulation";
+import ProjectPage from "./Contacts/projectPage";
 import DashBoardPage from "./dashboard/dashboard";
+import LoginPage from "./Contacts/loginPage";
+import VerificationPage from "./Contacts/verificationPage";
 import "./style.css";
 
 function App() {
 	return (
 		<div>
 			<SideNavBar />
-
 			<Routes>
 				<Route path="/" element={<HomePage />} />
 				<Route path="/Aboutme" element={<AboutMe />} />
@@ -27,7 +28,9 @@ function App() {
 				<Route path="/WorkPage" element={<WorkPage />} />
 				<Route path="/ContactPage" element={<ContactPage />} />
 				<Route path="/DashBoardPage" element={<DashBoardPage />} />
-				<Route path="/CongratulationPage" element={<CongratulationPage />} />
+				<Route path="/projectPage" element={<ProjectPage />} />
+				<Route path="/loginPage" element={<LoginPage />} />
+				<Route path="/verificationPage" element={<VerificationPage />} />
 				<Route path="*" element={<ErrorPage />} errorElement={<ErrorPage />} />
 			</Routes>
 			<AboutMe />
@@ -39,7 +42,5 @@ function App() {
 		</div>
 	);
 }
-
-// ReactDOM.render(<App />, document.getElementById("root"));
 
 export default App;

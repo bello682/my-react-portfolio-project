@@ -2,7 +2,7 @@ import React from "react";
 // import { Link } from "react-router-dom";
 // import slider from "./c:\Users\USER\Desktop\projects  folder\image slider javascript";
 
-export default function CongratulationPage() {
+export default function ProjectPage() {
 	return (
 		<div className="congratulation">
 			<a
